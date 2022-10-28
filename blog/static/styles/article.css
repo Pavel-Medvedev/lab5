@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(46 46 46);
+    color: rgb(160,82,45);
+    font-family: Tahoma, Arial, sans-serif; 
+}
+.header {
+    margin-top: 25px;
+    display: flex;
+}
+.header img{
+    margin-left: 5%;
+    width: 200px;
+}
+.header a{
+    text-align: right;
+    margin-left: auto;
+    margin-right: 5%;
+    height: max-content;
+    font-weight: bold;
+}
+body a {
+    color: rgb(160,82,45);
+}
+body a:link, a:visited, a:active, a:focus {
+    color: rgb(160,82,45);
+}
+p {
+    align="justify";
+}
+.post-title {
+    text-decoration: underline;
+    margin-left: 5%;
+    margin-right: auto;
+}
+.article-text {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.article-info {
+    display: flex;
+}
+.article-author {
+    width: 45%;
+    margin-left: 5%;
+    font-weight: bold;
+}
+.article-created-date {
+    width: 45%;
+    margin-right: 5%;
+    text-align: right;
+}

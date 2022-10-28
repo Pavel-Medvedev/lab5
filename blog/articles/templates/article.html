@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ STATIC_URL}}/static/styles/article.css">
+    <title>Статья №{{ post.id }}</title>
+</head>
+<body>
+    <div class="header">
+        <img src="{{ STATIC_URL }}/static/content/Logotip_Mtusi_znachok.png"/>
+        <a href="/">Все статьи</a>
+    </div>
+    <div class="archive">
+        <div class="one-post">
+            <h2 class="post-title"><srtong>{{ post.title }}<srtong/></h2>
+            <div class="article-info">
+                 <div class="article-author">{{ post.author.username }}</div>
+                 <div class="article-created-date">{{ post.created_date }}</div>
+            </div>
+            <p class="article-text">{{ post.text }}</p>
+        </div>
+    </div>
+</body>
+</html>

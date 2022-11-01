@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(46 46 46);
+    color: rgb(160,82,45);
+    font-family: Tahoma, Arial, sans-serif;
+}
+.header {
+    margin-top: 25px;
+}
+.header img{
+    margin-left: 5%;
+    width: 200px;
+}
+.header a{
+    height: max-content;
+    font-weight: bold;
+    margin-right: 5%;
+    text-align: right;
+    margin-left: auto;
+}
+form input, h1, textarea {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+form input, textarea {
+    background-color: rgb(75, 75, 75);
+    color: rgb(160, 82, 45);
+    margin-bottom: 25px;
+}
+form input {
+    width: 90%;
+}
+form input[type="submit"] {
+    width: max-content;
+}
+form textarea {
+    height: 250px;
+    resize: none;
+    width: 90%;
+}
+body a {
+    color: rgb(160,82,45);
+}
+body a:link, a:visited, a:active, a:focus {
+    color: rgb(160,82,45);
+}
+.error {
+    margin-left: 5%;
+}

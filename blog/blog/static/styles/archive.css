@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(46 46 46);
+    color: rgb(160,82,45);
+    font-family: Tahoma, Arial, sans-serif;
+}
+.header {
+    margin-top: 25px;
+    display: flex;
+}
+.header img{
+    margin-left: 5%;
+    width: 200px;
+}
+.navigation {
+    height: max-content;
+    font-weight: bold;
+    margin-right: 5%;
+    text-align: right;
+    margin-left: auto;
+}
+body a:link, a:visited, a:active, a:focus {
+    color: rgb(160,82,45);
+}
+.Link {
+    margin-left: 5%;
+    display: flex;
+}
+.post-title {
+    text-decoration: underline;
+    margin-right: auto;
+}
+.article-text {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.article-info {
+    display: flex;
+}
+.article-author {
+    width: 45%;
+    font-weight: bold;
+    margin-left: 5%;
+}
+.article-created-date {
+    width: 45%;
+    text-align: right;
+    margin-right: 5%;
+}

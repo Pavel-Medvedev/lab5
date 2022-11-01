@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ STATIC_URL}}/static/styles/archive.css">
+    <title>Архив статей</title>
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <img src="{{ STATIC_URL }}/static/content/Logotip_Mtusi_znachok.png"/>
+        </div>
+        <div class="navigation">
+            <p><a href="/login">Авторизация</a></p>
+            <p><a href="/article/new">Написать статью</a></p>
+        </div>
+    </div>
+    <div class="archive">
+        {% for post in posts %}
+        <div class="one-post">
+            <div class="Link"><a href="/article/{{post.id}}"><h2 class="post-title"><srtong>{{ post.title }}<srtong/></h2><a/></div>
+            <div class="article-info">
+                 <div class="article-author">{{ post.author.username }}</div>
+                 <div class="article-created-date">{{ post.created_date }}</div>
+            </div>
+            <p class="article-text">{{ post.get_excerpt }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
